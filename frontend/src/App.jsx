@@ -3135,7 +3135,7 @@ function App() {
 
             <div className="footer-line"></div>
 
-            <span>SUPERNATURAL WEBSITE. MADE BY NITIN DEVKAR</span>
+            <span>A FAN-MADE EXPERIENCE</span>
 
             <div className="carry-on">CARRY ON.</div>
           </footer>

@@ -5320,3 +5320,53 @@ img { max-width: 100%; }
   .strongest-being-card--chuck .strongest-being-image-wrap img,
   .strongest-being-portrait--chuck { animation: none !important; transform: none !important; }
 }
+
+/* HOME HERO: CENTER THE MAIN TITLE AND CALL TO ACTION */
+.hero {
+  justify-content: center;
+}
+
+.hero-content {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  padding-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-kicker,
+.hero h1,
+.hero-text {
+  text-align: center;
+}
+
+.hero-divider {
+  margin: 35px auto;
+}
+
+.hero-button {
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .hero-content {
+    width: 92%;
+    padding: 40px 0 70px;
+  }
+
+  .hero-kicker {
+    letter-spacing: 0.22em;
+    line-height: 1.8;
+  }
+
+  .hero h1 {
+    font-size: clamp(42px, 12vw, 68px);
+    line-height: 1.05;
+  }
+
+  .hero-text {
+    line-height: 1.7;
+  }
+}
