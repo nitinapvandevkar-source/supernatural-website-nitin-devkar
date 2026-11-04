@@ -1605,6 +1605,15 @@ function App() {
         .main-site.page-journal #journal, .main-site.page-journal #case-detail,
         .main-site.page-gallery #gallery, .main-site.page-death-reapers #death-reapers, .main-site.page-death-reapers #death-reaper-detail { display: block; }
         .main-site #asset-archive { display: none !important; }
+        .main-site:not(.page-home) #home,
+        .main-site:not(.page-home) .hero {
+          display: none !important;
+          visibility: hidden !important;
+        }
+        .main-site.page-home #home {
+          display: flex !important;
+          visibility: visible !important;
+        }
         .main-site:not(.page-home) #home { display: none !important; }
         .main-site.page-home #home { display: block !important; }
         .main-site.page-home .quote-section, .main-site.page-characters .quote-section, .main-site.page-angels .quote-section,
@@ -1676,8 +1685,8 @@ function App() {
             </div>
           </nav>
 
-          {currentRoute === "home" && (
-          <section id="home" className="hero">
+          {currentRoute === "home" ? (
+            <section id="home" className="hero">
             <div className="hero-overlay"></div>
 
             <div className="hero-content">
@@ -1703,8 +1712,8 @@ function App() {
               <div></div>
               <span>THE BEGINNING</span>
             </div>
-          </section>
-          )}
+            </section>
+          ) : null}
 
           <section id="brothers" className="section brothers">
             <div className="section-heading">

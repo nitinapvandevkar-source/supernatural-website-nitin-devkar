@@ -5370,3 +5370,15 @@ img { max-width: 100%; }
     line-height: 1.7;
   }
 }
+
+
+/* HOME HERO: visible only on the HOME router */
+.main-site:not(.page-home) #home,
+.main-site:not(.page-home) .hero {
+  display: none !important;
+  visibility: hidden !important;
+}
+.main-site.page-home #home {
+  display: flex !important;
+  visibility: visible !important;
+}
