@@ -1605,6 +1605,8 @@ function App() {
         .main-site.page-journal #journal, .main-site.page-journal #case-detail,
         .main-site.page-gallery #gallery, .main-site.page-death-reapers #death-reapers, .main-site.page-death-reapers #death-reaper-detail { display: block; }
         .main-site #asset-archive { display: none !important; }
+        .main-site:not(.page-home) #home { display: none !important; }
+        .main-site.page-home #home { display: block !important; }
         .main-site.page-home .quote-section, .main-site.page-characters .quote-section, .main-site.page-angels .quote-section,
         .main-site.page-seasons .quote-section, .main-site.page-timeline .quote-section,
         .main-site.page-locations .quote-section, .main-site.page-road-map .quote-section, .main-site.page-death-reapers .quote-section, .main-site.page-bestiary .quote-section,
@@ -1674,6 +1676,7 @@ function App() {
             </div>
           </nav>
 
+          {currentRoute === "home" && (
           <section id="home" className="hero">
             <div className="hero-overlay"></div>
 
@@ -1701,6 +1704,7 @@ function App() {
               <span>THE BEGINNING</span>
             </div>
           </section>
+          )}
 
           <section id="brothers" className="section brothers">
             <div className="section-heading">
