@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import winchesters from "./assets/home/winchesters.jpg";
 import "./App.css";
 
 // Images are loaded from src/assets/<folder>/ using the folder names in this project.
@@ -1686,32 +1687,47 @@ function App() {
           </nav>
 
           {currentRoute === "home" ? (
-            <section id="home" className="hero">
-            <div className="hero-overlay"></div>
+            <section
+              id="home"
+              className="hero"
+              style={{
+                backgroundImage: `
+                  linear-gradient(
+                    rgba(0, 0, 0, 0.35),
+                    rgba(0, 0, 0, 0.55)
+                  ),
+                  url(${winchesters})
+                `,
+                backgroundSize: "cover",
+                backgroundPosition: "center center",
+                backgroundRepeat: "no-repeat"
+             }}
+            >
+              <div className="hero-overlay"></div>
 
-            <div className="hero-content">
-              <p className="hero-kicker">THE CW • 2005 — 2020</p>
+              <div className="hero-content">
+                <p className="hero-kicker">THE CW • 2005 — 2020</p>
 
-              <h1>SUPERNATURAL</h1>
+                <h1>SUPERNATURAL</h1>
 
-              <div className="hero-divider"></div>
+                <div className="hero-divider"></div>
 
-              <p className="hero-text">
-                Saving people. Hunting things.
-                <br />
-                The family business.
-              </p>
+                <p className="hero-text">
+                  Saving people. Hunting things.
+                  <br />
+                  The family business.
+                </p>
 
-              <a href="#brothers" className="hero-button">
-                EXPLORE THE ROAD <span>↓</span>
-              </a>
-            </div>
+                <a href="#brothers" className="hero-button">
+                  EXPLORE THE ROAD <span>↓</span>
+                </a>
+              </div>
 
-            <div className="hero-bottom">
-              <span>01</span>
-              <div></div>
-              <span>THE BEGINNING</span>
-            </div>
+              <div className="hero-bottom">
+                <span>01</span>
+                <div></div>
+                <span>THE BEGINNING</span>
+              </div>
             </section>
           ) : null}
 
@@ -3148,7 +3164,7 @@ function App() {
 
             <div className="footer-line"></div>
 
-            <span>A FAN-MADE EXPERIENCE</span>
+            <span>SUPERNATURAL WEBSITE. CREATED BY NITIN DEVKAR</span>
 
             <div className="carry-on">CARRY ON.</div>
           </footer>

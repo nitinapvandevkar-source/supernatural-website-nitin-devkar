@@ -5465,3 +5465,16 @@ img { max-width: 100%; }
   display: none !important;
   visibility: hidden !important;
 }
+
+.main-site.page-home #home.hero {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.35),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("./assets/home/winchesters.jpg");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
