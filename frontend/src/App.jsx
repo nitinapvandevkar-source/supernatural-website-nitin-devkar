@@ -1615,7 +1615,7 @@ function App() {
           visibility: visible !important;
         }
         .main-site:not(.page-home) #home { display: none !important; }
-        .main-site.page-home #home { display: block !important; }
+        .main-site.page-home #home { display: flex !important; }
         .main-site.page-home .quote-section, .main-site.page-characters .quote-section, .main-site.page-angels .quote-section,
         .main-site.page-seasons .quote-section, .main-site.page-timeline .quote-section,
         .main-site.page-locations .quote-section, .main-site.page-road-map .quote-section, .main-site.page-death-reapers .quote-section, .main-site.page-bestiary .quote-section,
