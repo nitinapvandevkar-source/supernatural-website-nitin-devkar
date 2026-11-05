@@ -5495,3 +5495,30 @@ img { max-width: 100%; }
     rgba(0, 0, 0, 0.18)
   ) !important;
 }
+
+/* =================================
+   HOME — WINCHESTER CARD IMAGE FIX
+================================= */
+
+/* Dean & Sam */
+.main-site.page-home .brothers-card .character-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 10%;
+  filter: brightness(1.2) contrast(1.05);
+}
+
+/* Winchester Family */
+.main-site.page-home .family-card .character-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 10%;
+  filter: brightness(1.2) contrast(1.05);
+}
+
+/* Keep image containers consistent */
+.main-site.page-home .character-image {
+  overflow: hidden;
+}
