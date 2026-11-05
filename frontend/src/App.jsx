@@ -1693,13 +1693,13 @@ function App() {
               style={{
                 backgroundImage: `
                   linear-gradient(
-                    rgba(0, 0, 0, 0.35),
-                    rgba(0, 0, 0, 0.55)
+                    rgba(0, 0, 0, 0.05),
+                    rgba(0, 0, 0, 0.20)
                   ),
                   url(${winchesters})
                 `,
                 backgroundSize: "cover",
-                backgroundPosition: "center center",
+                backgroundPosition: "center 35%",
                 backgroundRepeat: "no-repeat"
              }}
             >

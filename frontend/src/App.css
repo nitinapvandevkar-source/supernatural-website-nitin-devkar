@@ -5478,3 +5478,20 @@ img { max-width: 100%; }
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+/* HOME HERO — BRIGHTER WINCHESTER BACKGROUND */
+.main-site.page-home #home.hero {
+  background-color: #080808;
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+}
+
+/* Keep the hero text readable without darkening the whole image */
+.main-site.page-home #home .hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.08),
+    rgba(0, 0, 0, 0.18)
+  ) !important;
+}
